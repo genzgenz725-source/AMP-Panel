@@ -38,3 +38,7 @@ bool set_sound() {
     }
     return 1;
 }
+
+void listen_for_remote_control() {
+    // logic of listen by nRF24L01+
+}

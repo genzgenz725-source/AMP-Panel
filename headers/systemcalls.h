@@ -17,6 +17,8 @@ void power_off(void);               // will power off the server
 
 bool set_sound(void);               // will configure the sound from audiocard to speakers
 
+void listen_for_remote_control();
+
 #ifdef __cplusplus
 }
 #endif
