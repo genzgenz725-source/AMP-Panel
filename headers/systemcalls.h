@@ -9,10 +9,13 @@ extern "C" {
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <sys/wait.h>
 
-bool start_system(void);    // start checking for pipewire, system calls, synchronization with AMP panel
+unsigned char check_system(void);   // start checking for pipewire, system calls, synchronization with AMP panel
 
-void power_off(void);        // will power off the server
+void power_off(void);               // will power off the server
+
+bool set_sound(void);               // will configure the sound from audiocard to speakers
 
 #ifdef __cplusplus
 }
